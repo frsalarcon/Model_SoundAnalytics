@@ -1,7 +1,6 @@
 import tensorflow as tf
 import numpy as np
 import tensorflow_io as tfio
-import tensorflow as tf
 from tensorflow import keras
 from IPython.display import Image, display
 import matplotlib.pyplot as plt
