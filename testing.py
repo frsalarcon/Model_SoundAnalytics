@@ -6,6 +6,34 @@ from IPython.display import Image, display
 import matplotlib.pyplot as plt
 from keras.models import load_model
 
+'''
+Clasificaciones del modelo:
+['E-aves_fondo',
+ 'I-cadenas',
+ 'E-grillo',
+ 'I-grillo_auto_camion',
+ 'I-grillo-camion_retro',
+ 'I-camion_aves',
+ 'I-fondo_industria',
+ 'E-grillo_gaviotas',
+ 'I-grillo-golpeteo',
+ 'E-grillo-motorauto',
+ 'E-grillo-pasos_pasto',
+ 'E-grillo-queltehue',
+ 'E-grillo-viento',
+ 'E-grillo_voz_mujer',
+ 'E-grillo-voz_niña',
+ 'E-grillo_voz_niño',
+ 'I-aves_fondo_Indus',
+ 'I-pajaro_tronco',
+ 'E-perro_pajaros',
+ 'I-queltehue_pajaro_fondo_indus',
+ 'E-queltehues',
+ 'I-troncos']
+
+'''
+
+
 # Cargar modelo.
 model_relu = load_model('0.01v_2.h5')
 
@@ -26,7 +54,6 @@ def predecir(ruta):
   for i in range(len(data)):
       predict.append(model_relu.predict(data[i])[0])
   predict=np.transpose(predict)
-  # Esctrucuta de predict:= [Fondo, Queltehue, Tronco]
 
   '''
   #Grafica:
@@ -34,7 +61,28 @@ def predecir(ruta):
   yticks = range(0,3,1)
   xticks=np.arange(0,len(data),10)
   plt.imshow(predict, aspect='auto', interpolation='nearest', cmap='Purples')
-  plt.yticks(yticks, ['Tronco', 'Queltehue','Fondo'])
+  plt.yticks(yticks, ['E-aves_fondo',
+ 'I-cadenas',
+ 'E-grillo',
+ 'I-grillo_auto_camion',
+ 'I-grillo-camion_retro',
+ 'I-camion_aves',
+ 'I-fondo_industria',
+ 'E-grillo_gaviotas',
+ 'I-grillo-golpeteo',
+ 'E-grillo-motorauto',
+ 'E-grillo-pasos_pasto',
+ 'E-grillo-queltehue',
+ 'E-grillo-viento',
+ 'E-grillo_voz_mujer',
+ 'E-grillo-voz_niña',
+ 'E-grillo_voz_niño',
+ 'I-aves_fondo_Indus',
+ 'I-pajaro_tronco',
+ 'E-perro_pajaros',
+ 'I-queltehue_pajaro_fondo_indus',
+ 'E-queltehues',
+ 'I-troncos'])
   plt.xticks(xticks, rotation=45)
   plt.show()
   '''
