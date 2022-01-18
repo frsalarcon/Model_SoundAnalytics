@@ -35,7 +35,7 @@ Clasificaciones del modelo:
 
 
 # Cargar modelo.
-model_relu = load_model('0.01v_2.h5')
+model_relu = load_model('0.03v.h5')
 
 # Cargar sonido
 ruta='ejemplo2.ogg'
