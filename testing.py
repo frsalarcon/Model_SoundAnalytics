@@ -10,17 +10,14 @@ from keras.models import load_model
 Clasificaciones del modelo:
 ['E-aves_fondo',
  'E-grillo',
- 'I-grillo_auto_camion',
- 'E-grillo-motorauto',
- 'E-grillo-viento',
  'I-aves_fondo_Indus',
+ 'E-fondo',
  'E-queltehues',
- 'I-troncos',
- 'E-fondo']
+ 'I-troncos']
 '''
 
 # Cargar modelo.
-model_relu = load_model('0.045v.h5')
+model_relu = load_model('0.05v.h5')
 
 # Cargar sonido
 ruta='ejemplo2.ogg'
