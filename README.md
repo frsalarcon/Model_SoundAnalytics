@@ -2,24 +2,11 @@
 
 ## Clasificaciones: 
 ['E-aves_fondo',
- 'I-cadenas',
  'E-grillo',
  'I-grillo_auto_camion',
- 'I-grillo-camion_retro',
- 'I-camion_aves',
- 'I-fondo_industria',
- 'E-grillo_gaviotas',
- 'I-grillo-golpeteo',
  'E-grillo-motorauto',
- 'E-grillo-pasos_pasto',
- 'E-grillo-queltehue',
  'E-grillo-viento',
- 'E-grillo_voz_mujer',
- 'E-grillo-voz_niña',
- 'E-grillo_voz_niño',
  'I-aves_fondo_Indus',
- 'I-pajaro_tronco',
- 'E-perro_pajaros',
- 'I-queltehue_pajaro_fondo_indus',
  'E-queltehues',
- 'I-troncos']
+ 'I-troncos',
+ 'E-fondo']
