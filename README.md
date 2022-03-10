@@ -1,12 +1,4 @@
 # Model_SoundAnalytics
-
-## Clasificaciones: 
-['E-aves_fondo',
- 'E-grillo',
- 'I-grillo_auto_camion',
- 'E-grillo-motorauto',
- 'E-grillo-viento',
- 'I-aves_fondo_Indus',
- 'E-queltehues',
- 'I-troncos',
- 'E-fondo']
+El programa retorna  un vector de dimensiones (N,7) [con N igual al largo en segundos del audio] con los pesos de las predict del modelo. 
+## Clasificaciones en orden: 
+['E-Viento', 'I-Cadenas', 'F-Aves', 'I-Troncos', 'I-Fondo', 'F-Queltehue', 'Carretera']
