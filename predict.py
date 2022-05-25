@@ -36,4 +36,4 @@ for i in range(len(data_split)):
     interpreter.set_tensor(input_details[0]['index'], input_data)
     interpreter.invoke()
     predicciones.append(interpreter.get_tensor(output_details[0]['index'])[0])
-
+print(len(predicciones))
